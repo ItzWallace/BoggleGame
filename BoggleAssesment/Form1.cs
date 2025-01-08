@@ -195,11 +195,6 @@ namespace BoggleAssesment
             }
         }
 
-        private void Quit_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
-
         private void Label1_Click(object sender, EventArgs e)
         {
             txtInputBox.Text += label1.Text;
@@ -600,7 +595,10 @@ namespace BoggleAssesment
             }
         }
 
-        
+        private void Quit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
                  
